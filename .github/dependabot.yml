@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: karma
+    versions:
+    - 2.0.5
+    - 6.1.1
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.3.1
+  - dependency-name: qs
+    versions:
+    - 6.10.0
+    - 6.9.6
+  - dependency-name: browserify
+    versions:
+    - 16.5.2
